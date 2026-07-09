@@ -1,0 +1,1660 @@
+/* ===========================
+        GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+        VARIABLES
+=========================== */
+
+:root{
+
+--rosa:#ff5ca8;
+--rosaClaro:#ffd9ea;
+--rosaPastel:#fff3f8;
+--blanco:#ffffff;
+--gris:#666;
+--negro:#333;
+--sombra:0 12px 30px rgba(255,92,168,.15);
+
+}
+
+/* ===========================
+        GENERAL
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+    
+
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#fff8fb,#ffeef6);
+overflow-x:hidden;
+color:var(--negro);
+
+}
+
+/* Fondo decorativo */
+
+body::before{
+
+content:"🍓 🍓 🍓";
+position:fixed;
+top:15%;
+left:-40px;
+font-size:60px;
+opacity:.04;
+transform:rotate(-20deg);
+
+}
+
+body::after{
+
+content:"🩷";
+position:fixed;
+right:30px;
+bottom:60px;
+font-size:70px;
+opacity:.05;
+
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:1000;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 4px 20px rgba(0,0,0,.05);
+
+}
+
+nav{
+
+max-width:1200px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 30px;
+
+}
+
+.logo{
+
+font-family:'Pacifico',cursive;
+
+font-size:30px;
+
+color:var(--rosa);
+
+}
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:#555;
+
+font-weight:600;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+.nav-links a:hover{
+
+color:var(--rosa);
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:3px;
+
+background:var(--rosa);
+
+transition:.4s;
+
+border-radius:20px;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+.menu-btn{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+color:var(--rosa);
+
+}
+
+/* ===========================
+          HERO
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:140px 8% 70px;
+
+    background:
+    linear-gradient(rgba(255,255,255,.2),
+    rgba(255,255,255,.2)),
+    url("img/hero.jpg") center/cover;
+}
+
+.hero-content{
+
+max-width:650px;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(8px);
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:var(--sombra);
+
+animation:fadeUp 1s;
+
+}
+
+.hero h1{
+
+font-family:'Pacifico';
+
+font-size:60px;
+
+color:var(--rosa);
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+color:#666;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+/* ===========================
+        BOTONES
+=========================== */
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn,
+.btn2{
+
+padding:16px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn{
+
+background:var(--rosa);
+
+color:white;
+
+}
+
+.btn2{
+
+background:white;
+
+border:2px solid var(--rosa);
+
+color:var(--rosa);
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(255,92,168,.4);
+
+}
+
+.btn2:hover{
+
+background:var(--rosa);
+
+color:white;
+
+transform:translateY(-5px);
+
+}
+
+/* Brillo */
+
+.btn::before,
+.btn2::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.6),
+transparent
+);
+
+transition:.7s;
+
+}
+
+.btn:hover::before,
+.btn2:hover::before{
+
+left:120%;
+
+}
+
+/* ===========================
+      TÍTULO SECCIÓN
+=========================== */
+
+.wave{
+
+text-align:center;
+
+padding:70px 20px 20px;
+
+}
+
+.wave h2{
+
+font-family:'Pacifico';
+
+font-size:45px;
+
+color:var(--rosa);
+
+}
+
+.wave p{
+
+margin-top:15px;
+
+color:#777;
+
+font-size:18px;
+
+}
+
+
+
+
+/*=====================================
+        SECCIONES DE PRODUCTOS
+======================================*/
+
+.productos{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 25px;
+}
+
+.titulo{
+    text-align:center;
+    font-family:'Pacifico',cursive;
+    font-size:3rem;
+    color:var(--rosa);
+    margin-bottom:50px;
+}
+
+/*=====================================
+            TARJETAS
+======================================*/
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(255,92,168,.15);
+
+    transition:.4s;
+
+    border:2px solid rgba(255,255,255,.5);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:#ffd8ea;
+
+    border-radius:50%;
+
+    top:-70px;
+
+    right:-70px;
+
+    opacity:.4;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 50px rgba(255,92,168,.25);
+
+}
+
+.card h3{
+
+    color:var(--rosa);
+
+    margin-bottom:15px;
+
+    font-size:1.6rem;
+
+}
+
+.card p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+.card span{
+
+    font-size:2rem;
+
+    color:var(--rosa);
+
+    font-weight:bold;
+
+}
+
+/*=====================================
+        TARJETA GRANDE
+======================================*/
+
+.grande{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/*=====================================
+        MINI HOTCAKES
+======================================*/
+
+.info-card{
+
+    background:white;
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:var(--sombra);
+
+    text-align:center;
+
+}
+
+.info-card h3{
+
+    color:var(--rosa);
+
+    margin-bottom:20px;
+
+}
+
+.info-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*=====================================
+        INGREDIENTES
+======================================*/
+
+.ingredientes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.ingredientes div{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    transition:.4s;
+
+}
+
+.ingredientes div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.ingredientes h3{
+
+    color:var(--rosa);
+
+    margin-bottom:18px;
+
+}
+
+.ingredientes ul{
+
+    list-style:none;
+
+}
+
+.ingredientes li{
+
+    margin:10px 0;
+
+    color:#666;
+
+}
+
+/*=====================================
+        SABORES
+======================================*/
+
+.sabores{
+
+    margin-bottom:35px;
+
+}
+
+.sabor{
+
+    background:#ffe3ef;
+
+    color:var(--rosa);
+
+    padding:18px;
+
+    border-radius:40px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.sabor:hover{
+
+    background:var(--rosa);
+
+    color:white;
+
+    transform:scale(1.05);
+
+}
+
+/*=====================================
+            CONTACTO
+======================================*/
+
+.contacto{
+
+    text-align:center;
+
+    padding:90px 25px;
+
+    background:linear-gradient(135deg,#ffd8ea,#fff5fa);
+
+}
+
+.contacto h2{
+
+    font-family:'Pacifico',cursive;
+
+    color:var(--rosa);
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.contacto p{
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.contact-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=====================================
+            FOOTER
+======================================*/
+
+footer{
+
+    background:#ff5ca8;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+footer h3{
+
+    font-family:'Pacifico',cursive;
+
+    font-size:2rem;
+
+    margin-bottom:12px;
+
+}
+
+footer p{
+
+    opacity:.9;
+
+}
+
+/*=====================================
+        WHATSAPP
+======================================*/
+
+.whatsapp{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    z-index:999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.12);
+
+}
+
+/*=====================================
+        BOTÓN ARRIBA
+======================================*/
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:105px;
+
+    right:28px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--rosa);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:998;
+
+}
+
+#topBtn.show{
+
+    display:block;
+
+}
+/* ===========================
+        PRODUCTOS
+=========================== */
+
+.productos{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:80px 20px;
+
+}
+
+.titulo{
+
+text-align:center;
+
+font-family:'Pacifico',cursive;
+
+font-size:50px;
+
+color:var(--rosa);
+
+margin-bottom:50px;
+
+}
+
+/* ===========================
+        TARJETAS
+=========================== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:var(--sombra);
+
+text-align:center;
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:6px;
+
+background:linear-gradient(
+90deg,
+#ff5ca8,
+#ff9bc6
+);
+
+}
+
+.card:hover{
+
+transform:
+translateY(-12px)
+scale(1.02);
+
+}
+
+.card h3{
+
+color:var(--rosa);
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#666;
+
+line-height:1.7;
+
+}
+
+.card span{
+
+display:block;
+
+margin-top:15px;
+
+font-size:30px;
+
+font-weight:bold;
+
+color:var(--rosa);
+
+}
+
+/* ===========================
+      CARD GRANDE
+=========================== */
+
+.grande{
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+/* ===========================
+      INFO CARD
+=========================== */
+
+.info-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:var(--sombra);
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+.info-card h3{
+
+color:var(--rosa);
+
+margin-bottom:15px;
+
+font-size:28px;
+
+}
+
+.info-card p{
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/* ===========================
+      INGREDIENTES
+=========================== */
+
+.ingredientes{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.ingredientes div{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:var(--sombra);
+
+transition:.3s;
+
+}
+
+.ingredientes div:hover{
+
+transform:translateY(-8px);
+
+}
+
+.ingredientes h3{
+
+color:var(--rosa);
+
+margin-bottom:15px;
+
+}
+
+.ingredientes ul{
+
+list-style:none;
+
+}
+
+.ingredientes li{
+
+padding:8px 0;
+
+color:#666;
+
+}
+
+/* ===========================
+        SABORES
+=========================== */
+
+.sabores{
+
+margin-bottom:35px;
+
+}
+
+.sabor{
+
+background:white;
+
+padding:18px;
+
+border-radius:20px;
+
+text-align:center;
+
+font-weight:600;
+
+box-shadow:var(--sombra);
+
+transition:.3s;
+
+}
+
+.sabor:hover{
+
+transform:scale(1.05);
+
+background:#fff5fa;
+
+}
+
+/* ===========================
+        CONTACTO
+=========================== */
+
+.contacto{
+
+padding:100px 20px;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+#ffe6f1,
+#fff5fa
+);
+
+margin-top:50px;
+
+}
+
+.contacto h2{
+
+font-family:'Pacifico';
+
+font-size:50px;
+
+color:var(--rosa);
+
+margin-bottom:20px;
+
+}
+
+.contacto p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#666;
+
+font-size:18px;
+
+}
+
+.contact-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:35px;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+
+background:#ff5ca8;
+
+padding:40px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+footer h3{
+
+font-family:'Pacifico';
+
+font-size:32px;
+
+margin-bottom:10px;
+
+}
+
+footer p{
+
+opacity:.95;
+
+}
+
+/* ===========================
+     BOTÓN WHATSAPP
+=========================== */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:70px;
+
+height:70px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:35px;
+
+color:white;
+
+text-decoration:none;
+
+z-index:999;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.2);
+
+animation:pulse 2s infinite;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+/* ===========================
+      BOTÓN SUBIR
+=========================== */
+
+#topBtn{
+
+position:fixed;
+
+bottom:110px;
+
+right:28px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:var(--rosa);
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:998;
+
+box-shadow:var(--sombra);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-5px);
+
+}
+/*=====================================
+        ANIMACIONES
+======================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*=====================================
+      CLASES DEL JAVASCRIPT
+======================================*/
+
+.card,
+.info-card,
+.ingredientes div,
+.sabor,
+.titulo,
+.contacto,
+footer{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+
+}
+
+.mostrar{
+
+    opacity:1 !important;
+    transform:translateY(0) !important;
+
+}
+
+.hero-content{
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+
+}
+
+.heroShow{
+
+    opacity:1 !important;
+    transform:translateY(0) !important;
+
+}
+
+.pulse{
+
+    animation:pulse .8s;
+
+}
+
+/*=====================================
+        HEADER AL BAJAR
+======================================*/
+
+header.scroll{
+
+    background:rgba(255,255,255,.9);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/*=====================================
+      EFECTO EN TARJETAS
+======================================*/
+
+.card{
+
+    cursor:pointer;
+
+}
+
+.card:hover h3{
+
+    color:#ff2f86;
+
+}
+
+.card:hover span{
+
+    transform:scale(1.08);
+    display:inline-block;
+
+}
+
+/*=====================================
+      SCROLL PERSONALIZADO
+======================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ffe8f3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff7eb8;
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff5ca8;
+
+}
+
+/*=====================================
+      RESPONSIVE TABLET
+======================================*/
+
+@media(max-width:900px){
+
+.hero{
+
+padding:120px 25px 70px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero-content{
+
+padding:35px;
+
+}
+
+.titulo{
+
+font-size:2.4rem;
+
+}
+
+.contacto h2{
+
+font-size:2.5rem;
+
+}
+
+}
+
+/*=====================================
+      RESPONSIVE CELULAR
+======================================*/
+
+@media(max-width:768px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+padding:30px 0;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+transform:translateY(-150%);
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+transform:translateY(0);
+
+}
+
+.hero{
+
+text-align:center;
+
+padding-top:150px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.ingredientes{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.whatsapp{
+
+width:60px;
+height:60px;
+font-size:30px;
+
+bottom:20px;
+right:20px;
+
+}
+
+#topBtn{
+
+bottom:95px;
+
+right:25px;
+
+}
+
+}
+
+/*=====================================
+      CELULARES PEQUEÑOS
+======================================*/
+
+@media(max-width:480px){
+
+.logo{
+
+font-size:24px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero-content{
+
+padding:25px;
+
+}
+
+.wave h2{
+
+font-size:34px;
+
+}
+
+.titulo{
+
+font-size:2rem;
+
+}
+
+.card{
+
+padding:22px;
+
+}
+
+.info-card{
+
+padding:25px;
+
+}
+
+.contacto h2{
+
+font-size:2rem;
+
+}
+
+footer h3{
+
+font-size:1.6rem;
+
+}
+
+}
+
+/*=====================================
+      EFECTO SUAVE
+======================================*/
+
+img{
+
+max-width:100%;
+display:block;
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.05);
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
