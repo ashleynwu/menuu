@@ -1669,8 +1669,9 @@ max-width:350px;
 
 .frappes{
     width: 100%;
-max-width:350px;
-    height: 250px;
+max-width:280px;
+    height: 350px;
+        object-fit: cover;
     display: block;
     margin: auto; /* Center the image and add some margin */
     border-radius: 20px; /* Optional: add rounded corners */
@@ -1696,9 +1697,9 @@ max-width:350px;
     }
 .hotc{
      width: 100%;
-max-width:350px;
-    height: 250px;
+    height: auto;
     display: block;
+        object-fit: cover;
     margin: auto; /* Center the image and add some margin */
     border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra);
