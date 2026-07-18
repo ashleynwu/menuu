@@ -1668,6 +1668,7 @@ scroll-behavior:smooth;
 .img-boneles,
 .img-bolis {
     max-width:100%;
+          max-width:800px;
     height:auto;
     display:block;
     margin:50px auto;
@@ -1692,6 +1693,8 @@ scroll-behavior:smooth;
     .img-frape,
     .img-boneles,
     .img-bolis {
+                    max-width:100%;
+
         margin:30px auto;
         border-radius:15px;
     }
