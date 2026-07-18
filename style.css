@@ -1657,49 +1657,42 @@ html{
 
 scroll-behavior:smooth;
 
-}.img-ingredientes{
-    width: 100%;
-max-width:350px;
-    height: 250px;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
+}
+/* ===========================
+    ESTILOS PARA LAS IMÁGENES
+=========================== */
+
+.img-ingredientes,
+.img-hotcakes,
+.img-frape,
+.img-boneles,
+.img-bolis {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:50px auto;
+    border-radius:25px;
+    box-shadow:var(--sombra);
+    object-fit:cover;
+    transition:.4s;
 }
 
-.img-frape{
-     width: 100%;
-max-width:350px;
-    height: 250px;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
+.img-ingredientes:hover,
+.img-hotcakes:hover,
+.img-frape:hover,
+.img-boneles:hover,
+.img-bolis:hover {
+    transform:scale(1.02);
+    box-shadow:0 20px 45px rgba(255,92,168,.3);
 }
-.img-boneles{
-    width: 100%;
-max-width:350px;
-    height: 250px;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra);
+
+@media (max-width:768px) {
+    .img-ingredientes,
+    .img-hotcakes,
+    .img-frape,
+    .img-boneles,
+    .img-bolis {
+        margin:30px auto;
+        border-radius:15px;
     }
-.img-bolis{
-    width: 100%;
-max-width:350px;
-    height: 250px;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra);
-    }
-.img-hotcakes{
-    width: 100%;
-max-width:350px;
-    height: 250px;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra);
-    }
+}
