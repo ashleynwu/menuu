@@ -1668,23 +1668,22 @@ max-width:350px;
 }
 
 .img-frape{
-    width: 100%;
-max-width:280px;
-    height: 350px;
-        object-fit: cover;
-    display: block;
-    margin: auto; /* Center the image and add some margin */
-    border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
-}
-.img-boneles{
      width: 100%;
 max-width:350px;
     height: 250px;
     display: block;
     margin: auto; /* Center the image and add some margin */
     border-radius: 20px; /* Optional: add rounded corners */
-    box-shadow: var(--sombra);;
+    box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
+}
+.img-boneles{
+    width: 100%;
+max-width:350px;
+    height: 250px;
+    display: block;
+    margin: auto; /* Center the image and add some margin */
+    border-radius: 20px; /* Optional: add rounded corners */
+    box-shadow: var(--sombra);
     }
 .img-bolis{
     width: 100%;
@@ -1696,10 +1695,10 @@ max-width:350px;
     box-shadow: var(--sombra);
     }
 .img-hotcakes{
-     width: 100%;
-    height: auto;
+    width: 100%;
+max-width:350px;
+    height: 250px;
     display: block;
-        object-fit: cover;
     margin: auto; /* Center the image and add some margin */
     border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra);
