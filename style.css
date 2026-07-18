@@ -1690,3 +1690,11 @@ scroll-behavior:smooth;
     border-radius: 15px; /* Optional: add rounded corners */
     box-shadow: var(--sombra);
     }
+.hotc{
+     width: 500px;
+    height: 600px;
+    display: block;
+    margin: 20px auto; /* Center the image and add some margin */
+    border-radius: 15px; /* Optional: add rounded corners */
+    box-shadow: var(--sombra);
+    }
