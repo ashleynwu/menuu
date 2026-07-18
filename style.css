@@ -1667,7 +1667,7 @@ max-width:350px;
     box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
 }
 
-.frappes{
+.img-frape{
     width: 100%;
 max-width:280px;
     height: 350px;
@@ -1677,7 +1677,7 @@ max-width:280px;
     border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
 }
-.boneless{
+.img-boneles{
      width: 100%;
 max-width:350px;
     height: 250px;
@@ -1686,7 +1686,7 @@ max-width:350px;
     border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra);;
     }
-.bolis{
+.img-bolis{
     width: 100%;
 max-width:350px;
     height: 250px;
@@ -1695,7 +1695,7 @@ max-width:350px;
     border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra);
     }
-.hotc{
+.img-hotcakes{
      width: 100%;
     height: auto;
     display: block;
