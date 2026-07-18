@@ -1667,8 +1667,8 @@ scroll-behavior:smooth;
 }
 
 .frappes{
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     display: block;
     margin: 20px auto; /* Center the image and add some margin */
     border-radius: 15px; /* Optional: add rounded corners */
