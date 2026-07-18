@@ -1658,11 +1658,12 @@ html{
 scroll-behavior:smooth;
 
 }.img-ingredientes{
-    width: 500px;
-    height: 600px;
+    width: 100%;
+max-width:350px;
+    height: 250px;
     display: block;
-    margin: 20px auto; /* Center the image and add some margin */
-    border-radius: 15px; /* Optional: add rounded corners */
+    margin: auto; /* Center the image and add some margin */
+    border-radius: 20px; /* Optional: add rounded corners */
     box-shadow: var(--sombra); /* Optional: add shadow for better visibility */
 }
 
